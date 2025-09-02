@@ -1,10 +1,28 @@
 ﻿namespace assignment3
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //read first name of user
+            Console.WriteLine("Enter your first name: ");
+            string firstName = Console.ReadLine();
+
+            //read last name of user
+            Console.WriteLine("Enter your last name: ");
+            string lastName = Console.ReadLine();
+
+            //display full name (option 1)
+            Console.WriteLine("Your full name is: " + firstName + " " + lastName);
+
+            //display full name (option 2)
+            Console.WriteLine("Your full name is {0} {1}", firstName, lastName);
+
+            //display full name (option 3)
+            Console.WriteLine($"Your full name is: {firstName} {lastName}");
+
+            //wait for the user to enter a key
+            Console.ReadKey();
         }
     }
 }
